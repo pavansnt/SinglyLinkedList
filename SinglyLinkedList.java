@@ -58,22 +58,21 @@ public class SinglyLinkedList {
             currentNode = currentNode.next;
             currentPosition++;
         }
-        
-        if (currentNode == null) {
-        System.err.println("Invalid position! Out of range.");
-        return;
-        }
-        
         Node newNode = new Node(data);
         newNode.next = currentNode.next;
         currentNode.next = newNode;
 
+        if (currentNode == null) {
+        System.err.println("Invalid position! Out of range.");
+        return;
+        }
     }
 
     public void testMethod(){
         insertAtBeginnning(1);  // List: 1
         insertAtBeginnning(2);  // List: 2 -> 1
         insertAtPosition(3, 3);
+        insertAtPosition(4, 5);
         // insertAtPosition(1,-1);
         // insertAtPosition(1,0);
 
