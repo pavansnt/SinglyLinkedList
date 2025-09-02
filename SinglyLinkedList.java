@@ -63,8 +63,8 @@ public class SinglyLinkedList {
         currentNode.next = newNode;
 
         if (currentNode == null) {
-        System.err.println("Invalid position! Out of range.");
-        return;
+            System.err.println("Invalid position! Out of range.");
+            return;
         }
     }
 
