@@ -5,6 +5,6 @@ public class Node{
     public Node(int data){
         this.data = data;
         this.next = null;
-        System.out.println("New Node created with data = " + data);
+        System.out.println("New  node created with data = " + data);
     }
 }
